@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Html5master</title>
+    <link rel="icon" href="hootsuite_social_network_communication_chat_interaction_icon_192270%20(1).ico"
+          type="images/png">
+    <!--    shortcut для старых браузеров-->
+    <!--    <link rel="icon shortcut" href="img/hootsuite_social_network_communication_chat_interaction_icon_192270.png">-->
+</head>
+
+<body>
+<!--Здесь начинается тело сата!-->
+<h1>Дневник по HTML</h1>
+
+<h2>Примеры и практика</h2>
+<hr>
+<a href="index.html">Главная</a>&nbsp; &nbsp;<a href="#">Страница 2 </a>
+<hr>
+
+
+<style>
+    form {
+        width: 500px;
+        margin: 20px auto;
+        font-family: sans-serif;
+        fontsize: 15px;
+    }
+
+    fieldset {
+        border: 3px double #ccc;
+        border-radius: 3px;
+        margin: 20px 0;
+        padding: 20px;
+        background: chartreuse;
+    }
+
+    legend {
+        background: lightseagreen;
+        border-radius: 3px;
+        padding: 5px 10px;
+        color: white;
+    }
+
+    lable {
+        width: 150px;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+</style>
+
+<form action="#" name="MyForm" accept-charest="utf-8" enctype="text/plain" method="get" autocomplete="on">
+    <fieldset class="form">
+
+        <legend class="">Мои контактные данные</legend>
+        <p>
+            <lable for="name"> Укажите имя:</lable>
+            <!--        placeholder - это тип подсказки! -->
+            <input id="name" type="text" placeholder="Ваше имя" required>
+        </p>
+        <p>
+            <lable for="mail"> Укажите e-mail:</lable>
+            <!--        placeholder - это тип подсказки! -->
+            <input id="mail" type="email" placeholder="Ваше e-mail?" required>
+        </p>
+
+        <!--    <p>-->
+        <!--        <lable for="phone"> Укажите телефон:</lable>-->
+        <!--        &lt;!&ndash;        placeholder - это тип подсказки! &ndash;&gt;-->
+        <!--        <input id="phone" type="tel" placeholder="Ваш телефон?" maxlength="13">-->
+        <!--    </p>-->
+        <p>
+            <lable for="phone"> Укажите телефон:</lable>
+            <!--        placeholder - это тип подсказки! -->
+            <!--  pattern="\D\s\d"   pattern="[A-Z]"   pattern="[A-Za-zA-ЯЁё]"  pattern="[A-Z][a-z]"  pattern="\d"- ввод 1 цифры либо pattern=[0-9] pattern="\D"-вводим любой символ-pattern="\S"-вводим пробел-->
+            <!-- pattern="\d+(,\d{2})"-это 3,14 pattern="\d+(\. \d{1,})"-запятую меняем на точку pattern="\d+(,\d{2})" - 3,14 pattern="[0 - 9]{6}" -ВВОДИТСЯ 6 ЦИФР pattern="[0 - 9]{1,6}" диапазон от 1 до 6 цифр pattern="[A - Z]{6}" -ВВОДИТСЯ 6 БУКВ-->
+            <input id="phone" pattern="\+\d{3}\s\d{3}\s\d{2}\s\d{2}" type="tel" placeholder="+375 25 111 11 11">
+        </p>
+        <p>
+            <lable for="web"> Укажите сайт:</lable>
+            <!--        placeholder - это тип подсказки! -->
+            <input id="web" type="url" placeholder="Ваш сайт?">
+        </p>
+        <!--Выпадающий список-->
+        <p>
+            <lable for="city">Укажите город:</lable>
+            <select id="city" name="city">
+                <!--            на сервер отправляется хначение value-->
+                <option value="city1">Moskow</option>
+                <option value="city2">New-York</option>
+                <option value="city3">Snt.Petesburg</option>
+                <option value="city4">Berlin</option>
+                <option value="city5">Minsk</option>
+                <option value="city6">Tallin</option>
+                <option value="city7">Ankara</option>
+                <option value="city8">San.Francisco</option>
+            </select>
+        </p>
+        <p>
+            <lable for="citi">Укажите город:</lable>
+            <select id="citi" name="citi">
+                <!-- на сервер отправляется значение vБalue-->
+                <optgroup label="Россия">
+                    <option value="city1">Moskow</option>
+                    <option value="city2">Snt.Petesburg</option>
+                </optgroup>
+                <optgroup label="USA">
+                    <option value="city3">New-York</option>
+                    <option value="city4">San.Francisco</option>
+                </optgroup>
+                <optgroup label="Belorus">
+                    <option value="city5">Minsk</option>
+                </optgroup>
+                <optgroup label="Tyrkey">
+                    <option value="city6">Ankara</option>
+                </optgroup>
+                <optgroup label="Europe">
+                    <option value="city7">Tallin</option>
+                    <option value="city8">Berlin</option>
+                </optgroup>
+            </select>
+        </p>
+    </fieldset>
+    <fieldset class="">
+        <legend class="">Мои данные</legend>
+        <p>
+            <lable for="pol"> Укажите ваш пол:</lable>
+            <!--        placeholder - это тип подсказки! -->
+            <input id="pol" type="radio" name="pol"> Женский
+            <input id="pol" type="radio" name="pol"> Мужской
+        </p>
+
+        <p>
+            <lable for="dr"> Укажите Д.Р.:</lable>
+            <input id="dr" value="2005-01-24" type="date" name="dr">
+        </p>
+
+        <p>
+            <lable for="time">Укажите время:</lable>
+            <input id="time" max="08:00" type="time" name="time">
+        </p>
+
+        <p>
+            <lable for="time">Укажите время:</lable>
+            <input id="time" max="2015-06" value="2015-W24" type="week" name="time">
+        </p>
+
+        <p>
+            <lable for="dr3"> Укажите д.р.:</lable>
+            <input id="dr3" type="datetime-local" name="dr3">
+        </p>
+
+        <p>
+            <lable for="sub"> Получать письма по:</lable>
+            <input id="sub" type="checkbox" name="sub" checked>Все
+            <input id="sub" type="checkbox" name="sub">Бизнесу
+            <input id="sub" type="checkbox" name="sub">Акциям
+            <input id="sub" type="checkbox" name="sub">Forexy
+        </p>
+        <p>
+            <lable for="num"> Ваш вес (кг):</lable>
+            <input id="num" type="number" value="35" min="35" max="200" step="5">
+        </p>
+
+        <p>
+            <lable for="col"> Цвет глаз:</lable>
+            <input id="col" type="color" value="#d80000">
+        </p>
+
+        <p>
+            <lable for="ran"> Ваш рост (см):</lable>
+            <input oninput="out.value=(ran.value); out2.value=(ran.value *10)" id="ran" type="range" min="0" max="300"
+                   value="100">
+            <br><br>
+            <lable> Ваш рост равен:</lable>
+            <output id="out">100</output>
+            сантиметров
+            <br><br>
+            <lable> или:</lable>
+            <output id="out2">1000</output>
+            миллиметров
+        </p>
+    </fieldset>
+    <fieldset class="">
+        <legend class="">Обратная связь</legend>
+        <p>
+            <lable for="pass"> Укажите пароль:</lable>
+            <!--        placeholder - это тип подсказки! -->
+            <input id="pass" type="password" placeholder="Введите пароль">
+        </p>
+        <p>
+            <lable for="text">
+                Сообщение
+
+            </lable>
+            <textarea name="text" maxlength="10" id="text" cols="30" rows="10"
+                      placeholder="Введите сообщение..."></textarea>
+
+        </p>
+        <p>
+            <input type="submit" value="Отправить">
+            <input type="submit" value="Очистить">
+        </p>
+    </fieldset>
+</form>
+</body>
+</html>

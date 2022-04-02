@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*Оформление параграфов*/
+body {
+    background-color: #333333;
+    background-image: url(img/halftone-yellow.png);
+    background-repeat: repeat-x;
+    background-attachment: scroll;
+    /*background-attachment: fixed;*/
+    /*background-position: right top;*/
+    /*background-position: 50% 50%;*/
+
+}
+
+p {
+    color: #295a29;
+    font-size: 24px;
+    font-family: Arial;
+}
+
+#page {
+    width: 960px;
+    margin: 0 auto;
+
+}
+
+.strong-red {
+    font-weight: bolder;
+    color: red;
+
+}
+
+.light-blue {
+    font-weight: lighter;
+    color: blue;
+
+}
+
+
+.strong {
+    margin-top: 185px;
+    color: #0ca9e2;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: overline;
+    text-transform: uppercase;
+    /*это отступ в абзаце*/
+    text-indent: 30px;
+    letter-spacing: 10px;
+    /*word-spacing: 10px;*/
+    line-height: 30px;
+    font-family: 'Bonheur Royale', cursive;
+
+
+}
+
+#styles li {
+    color: aliceblue;
+    font-family: Bonheur, Royale;
+    list-style-image: url(img/hootsuite_social_network_communication_chat_interaction_icon_192270.svg);
+);
+    list-style-position: inside;
+    font-size: 36px;
+    border: 1px solid #ffffff;
+}
+
+#styles li:hover {
+    background: rgba(243, 175, 224, 0.52);
+
+}
+
+#nav {
+    height: 65px;
+
+}
+
+#nav ul li {
+    float: left;
+}
+
+#nav ul li a {
+    color: #fff;
+    padding: 0 10px;
+    text-decoration: none;
+    line-height: 65px;
+    display: block;
+    height: 65px;
+}
+
+#nav ul li a:hover {
+    background: rgba(183, 43, 43, 0.72);
+    text-decoration: underline;
+}
